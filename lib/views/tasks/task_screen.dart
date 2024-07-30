@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_import, prefer_typing_uninitialized_variables
+
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_cupertino_date_picker_fork/flutter_cupertino_date_picker_fork.dart';
@@ -13,7 +15,7 @@ import 'package:todo/views/tasks/components/time_date_picker.dart';
 import 'package:todo/views/tasks/widgets/task_screen_appbar.dart';
 
 class TaskScreen extends StatefulWidget {
-  TaskScreen(
+  const TaskScreen(
       {super.key,
       required this.titleTextController,
       required this.descriptionTextController,
@@ -326,7 +328,7 @@ class _TaskScreenState extends State<TaskScreen> {
                                   color: Colors.grey.shade300),
                               width: 150,
                               height: 50,
-                              child: Center(
+                              child: const Center(
                                 child: Text(
                                   'Delete Task',
                                   style: TextStyle(
@@ -373,7 +375,7 @@ class _TaskScreenState extends State<TaskScreen> {
                         child: Center(
                           child: Text(
                             !isTaskAlreadyExists() ? 'Update Task' : 'Add Task',
-                            style: TextStyle(
+                            style: const TextStyle(
                                 fontWeight: FontWeight.w500,
                                 color: Colors.black,
                                 fontSize: 17),

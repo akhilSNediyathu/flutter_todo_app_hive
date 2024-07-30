@@ -6,7 +6,7 @@ class TaskScreenAppbar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: double.infinity,
       height: 80,
       child: Row(
@@ -17,7 +17,7 @@ class TaskScreenAppbar extends StatelessWidget implements PreferredSizeWidget {
                 onPressed: () {
                   Navigator.pop(context);
                 },
-                icon: Icon(
+                icon: const Icon(
                   Icons.arrow_back_ios_new_rounded,
                   color: AppColors.black,
                 )),
@@ -28,5 +28,5 @@ class TaskScreenAppbar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  Size get preferredSize => Size.fromHeight(100);
+  Size get preferredSize => const Size.fromHeight(100);
 }

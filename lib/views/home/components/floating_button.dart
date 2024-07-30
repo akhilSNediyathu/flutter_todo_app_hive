@@ -15,7 +15,7 @@ class FloatingButton extends StatelessWidget {
         Navigator.push(
             context,
             CupertinoPageRoute(
-                builder: (_) => TaskScreen(
+                builder: (_) => const TaskScreen(
                     titleTextController: null,
                     descriptionTextController: null,
                     task: null)));

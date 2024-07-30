@@ -91,7 +91,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       children: [
                         const Text(
                           AppStrings.mainTitle,
-                          style: const TextStyle(
+                          style:  TextStyle(
                             fontSize: 24,
                             fontWeight: FontWeight.bold,
                           ),
@@ -115,7 +115,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         value: checkDoneTask(tasks) / valueOfIndicator(tasks),
                         backgroundColor: Colors.grey.shade300,
                         valueColor: const AlwaysStoppedAnimation(
-                            AppColors.primarycolor),
+                            AppColors.primarycolor1),
                       ),
                     ),
                   ),

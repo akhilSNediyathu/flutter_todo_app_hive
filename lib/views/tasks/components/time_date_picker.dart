@@ -32,7 +32,7 @@ class TimepickerWidget extends StatelessWidget {
             children: [
               Text(
                 title,
-                style: TextStyle(
+                style: const TextStyle(
                     fontWeight: FontWeight.w500,
                     color: Colors.black,
                     fontSize: 17),

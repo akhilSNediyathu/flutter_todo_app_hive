@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
+  static Color get secondarycolor1 => const Color(0xffC58BF2);
+  static Color get secondarycolor2 => const Color(0xffEEA4CE);
   static const Color primarycolor = Colors.blue;
-  static List<Color> primaryGradientColor = [
-    Colors.blue.shade900,
-    Colors.blue.shade300
-  ];
-  static List<Color> tilegradientdone = [
-    Colors.blue.shade600,
-    Colors.blue.shade900
-  ];
+  static const Color primarycolor1 = Color(0xff92A3FD);
+  static Color get primarycolor2 => const Color(0xff9DCEFF);
+  static List<Color> primaryGradientColor = [primarycolor1, primarycolor2];
+  static List<Color> tilegradientdone = [secondarycolor1, secondarycolor2];
   static List<Color> tilegradientwhite = [
     Colors.grey.shade300,
     Colors.grey.shade300

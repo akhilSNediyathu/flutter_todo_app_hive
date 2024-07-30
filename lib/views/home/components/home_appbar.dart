@@ -23,7 +23,7 @@ class _HomeAppbarState extends State<HomeAppbar>
   void initState() {
     animationController = AnimationController(
       vsync: this,
-      duration: Duration(seconds: 1),
+      duration: const Duration(seconds: 1),
       value: 0.0,
     );
     super.initState();
@@ -78,7 +78,7 @@ class _HomeAppbarState extends State<HomeAppbar>
             ),
             Text(
               getTodaysWeekday(),
-              style: TextStyle(
+              style: const TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 24,
                   color: AppColors.grey),
@@ -89,7 +89,7 @@ class _HomeAppbarState extends State<HomeAppbar>
                     ? notaskDeleteWarning(context)
                     : deleteAllTaskConfirmation(context);
               },
-              icon: Icon(
+              icon: const Icon(
                 CupertinoIcons.trash_fill,
                 size: 30,
                 color: AppColors.black,

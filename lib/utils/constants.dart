@@ -43,7 +43,7 @@ dynamic emptyWarning(BuildContext context) {
       msg: AppStrings.oopsMessage,
       subMsg: 'You must fill all the fields!',
       corner: 20,
-      padding: EdgeInsets.all(20),
+      padding: const EdgeInsets.all(20),
       duration: 2000);
 }
 
@@ -52,7 +52,7 @@ dynamic updateTaskWarning(BuildContext context) {
       msg: AppStrings.oopsMessage,
       subMsg: 'You must edit the task and then try to update it!',
       corner: 20,
-      padding: EdgeInsets.all(20),
+      padding: const EdgeInsets.all(20),
       duration: 2000);
 }
 

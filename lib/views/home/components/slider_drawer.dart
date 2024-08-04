@@ -26,8 +26,7 @@ class CustomSlider extends StatelessWidget {
         children: [
           const CircleAvatar(
             radius: 50,
-            backgroundImage: NetworkImage(
-                'https://e7.pngegg.com/pngimages/799/987/png-clipart-computer-icons-avatar-icon-design-avatar-heroes-computer-wallpaper-thumbnail.png'),
+            backgroundImage: AssetImage('assets/profile.png'),
           ),
           h10,
           const Text(

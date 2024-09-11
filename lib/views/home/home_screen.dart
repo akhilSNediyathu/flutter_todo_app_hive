@@ -77,7 +77,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Container(
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
-                  border: Border.all(width: 3, color: Colors.grey.shade300)),
+                  border: Border.all(width: 3, color: AppColors.whiteShade1)),
               height: 100,
               width: size.width,
               child: Row(
@@ -91,7 +91,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       children: [
                         const Text(
                           AppStrings.mainTitle,
-                          style:  TextStyle(
+                          style: TextStyle(
                             fontSize: 24,
                             fontWeight: FontWeight.bold,
                           ),
